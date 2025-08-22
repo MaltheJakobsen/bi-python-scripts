@@ -32,11 +32,11 @@ def daterange(start_date, end_date):
 
 deltadays = 1
 
-for i in deltadays:
+while True:
     deltadays += 1
-    if i > 28:
+    if deltadays > 28:
         break
-
+    print(deltadays)
 
     End_date   = date.today()
     Start_date = date.today() - timedelta(days=deltadays)
